@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLearn - Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop" alt="CodeLearn Logo" class="logo">
+                <span class="brand-text">CodeLearn</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="tutorials.html" class="nav-link">Tutorials</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="cta-button">Start Learning</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Programming Blog</h1>
+            <p class="hero-subtitle">Latest insights, tips, and trends in programming</p>
+            <div class="search-container">
+                <input type="text" placeholder="Search for programming languages..." class="search-input">
+                <button class="search-button">Search now</button>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-grid">
+                <div class="blog-post">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="JavaScript ES6">
+                    <div class="blog-post-content">
+                        <span class="blog-date">December 15, 2024</span>
+                        <div class="blog-category">JavaScript</div>
+                        <h3>JavaScript ES6 Features Every Developer Should Know</h3>
+                        <p>Explore the most important ES6 features that will make your JavaScript code more efficient and readable. From arrow functions to destructuring.</p>
+                        <div class="blog-meta">
+                            <span class="read-time">5 min read</span>
+                            <span class="author">By Rahul Sharma</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-post">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Python Data Science">
+                    <div class="blog-post-content">
+                        <span class="blog-date">December 12, 2024</span>
+                        <div class="blog-category">Python</div>
+                        <h3>Getting Started with Python for Data Science</h3>
+                        <p>Learn how to use Python for data analysis and machine learning. This comprehensive guide covers pandas, numpy, and matplotlib.</p>
+                        <div class="blog-meta">
+                            <span class="read-time">8 min read</span>
+                            <span class="author">By Priya Singh</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-post">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="React Hooks">
+                    <div class="blog-post-content">
+                        <span class="blog-date">December 10, 2024</span>
+                        <div class="blog-category">React</div>
+                        <h3>Mastering React Hooks: A Complete Guide</h3>
+                        <p>Deep dive into React Hooks and learn how to use useState, useEffect, and custom hooks to build powerful React applications.</p>
+                        <div class="blog-meta">
+                            <span class="read-time">10 min read</span>
+                            <span class="author">By Amit Kumar</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-post">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Java Spring Boot">
+                    <div class="blog-post-content">
+                        <span class="blog-date">December 8, 2024</span>
+                        <div class="blog-category">Java</div>
+                        <h3>Building REST APIs with Spring Boot</h3>
+                        <p>Learn how to create robust REST APIs using Spring Boot. This tutorial covers everything from setup to deployment.</p>
+                        <div class="blog-meta">
+                            <span class="read-time">12 min read</span>
+                            <span class="author">By Vikash Gupta</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-post">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="CSS Grid">
+                    <div class="blog-post-content">
+                        <span class="blog-date">December 5, 2024</span>
+                        <div class="blog-category">CSS</div>
+                        <h3>CSS Grid vs Flexbox: When to Use Which?</h3>
+                        <p>Understand the differences between CSS Grid and Flexbox, and learn when to use each layout method for optimal results.</p>
+                        <div class="blog-meta">
+                            <span class="read-time">6 min read</span>
+                            <span class="author">By Neha Patel</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-post">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Node.js">
+                    <div class="blog-post-content">
+                        <span class="blog-date">December 3, 2024</span>
+                        <div class="blog-category">Node.js</div>
+                        <h3>Node.js Best Practices for 2024</h3>
+                        <p>Discover the latest Node.js best practices for building scalable and maintainable backend applications in 2024.</p>
+                        <div class="blog-meta">
+                            <span class="read-time">9 min read</span>
+                            <span class="author">By Rohit Sharma</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-post">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Machine Learning">
+                    <div class="blog-post-content">
+                        <span class="blog-date">December 1, 2024</span>
+                        <div class="blog-category">AI/ML</div>
+                        <h3>Introduction to Machine Learning with Python</h3>
+                        <p>Start your machine learning journey with Python. Learn about algorithms, data preprocessing, and model evaluation.</p>
+                        <div class="blog-meta">
+                            <span class="read-time">15 min read</span>
+                            <span class="author">By Dr. Anjali Verma</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-post">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Mobile Development">
+                    <div class="blog-post-content">
+                        <span class="blog-date">November 28, 2024</span>
+                        <div class="blog-category">Mobile</div>
+                        <h3>React Native vs Flutter: Which to Choose?</h3>
+                        <p>Compare React Native and Flutter for mobile app development. Learn about performance, development speed, and ecosystem.</p>
+                        <div class="blog-meta">
+                            <span class="read-time">11 min read</span>
+                            <span class="author">By Karan Singh</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-post">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Web Security">
+                    <div class="blog-post-content">
+                        <span class="blog-date">November 25, 2024</span>
+                        <div class="blog-category">Security</div>
+                        <h3>Web Security Best Practices for Developers</h3>
+                        <p>Essential security practices every web developer should implement to protect applications from common vulnerabilities.</p>
+                        <div class="blog-meta">
+                            <span class="read-time">13 min read</span>
+                            <span class="author">By Suresh Kumar</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated with Programming Trends!</h2>
+            <p>Get the latest programming articles and tutorials delivered to your inbox</p>
+            <button class="newsletter-button">Subscribe Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li><a href="#">HTML Course</a></li>
+                        <li><a href="#">CSS Course</a></li>
+                        <li><a href="#">JavaScript Course</a></li>
+                        <li><a href="#">React Course</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Backend</h4>
+                    <ul>
+                        <li><a href="#">Python Course</a></li>
+                        <li><a href="#">Node.js Course</a></li>
+                        <li><a href="#">Java Course</a></li>
+                        <li><a href="#">PHP Course</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Mobile</h4>
+                    <ul>
+                        <li><a href="#">Android Development</a></li>
+                        <li><a href="#">iOS Development</a></li>
+                        <li><a href="#">React Native</a></li>
+                        <li><a href="#">Flutter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Data Science</h4>
+                    <ul>
+                        <li><a href="#">Python for Data</a></li>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">Data Analysis</a></li>
+                        <li><a href="#">AI Course</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Code Examples</a></li>
+                        <li><a href="#">Practice Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-cta">
+                    <button class="footer-cta-button">Start Learning</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

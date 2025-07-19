@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLearn - Learn Programming Languages</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop" alt="CodeLearn Logo" class="logo">
+                <span class="brand-text">CodeLearn</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="tutorials.html" class="nav-link">Tutorials</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="cta-button">Start Learning</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Master Programming Languages</h1>
+            <p class="hero-subtitle">Learn HTML, CSS, JavaScript, Python, Java and more with our comprehensive courses</p>
+            <div class="search-container">
+                <input type="text" placeholder="Search for programming languages..." class="search-input">
+                <button class="search-button">Search now</button>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- Featured Languages -->
+    <section class="featured-languages">
+        <div class="container">
+            <h2 class="section-title">Popular Programming Languages</h2>
+            <div class="languages-grid">
+                <div class="language-card">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="HTML">
+                    <h3>HTML</h3>
+                    <p>Structure web pages with markup language</p>
+                    <button class="learn-btn">Learn HTML</button>
+                </div>
+                <div class="language-card">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="CSS">
+                    <h3>CSS</h3>
+                    <p>Style and design beautiful websites</p>
+                    <button class="learn-btn">Learn CSS</button>
+                </div>
+                <div class="language-card">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                    <p>Add interactivity to web applications</p>
+                    <button class="learn-btn">Learn JavaScript</button>
+                </div>
+                <div class="language-card">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Python">
+                    <h3>Python</h3>
+                    <p>Versatile language for AI and web development</p>
+                    <button class="learn-btn">Learn Python</button>
+                </div>
+                <div class="language-card">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Java">
+                    <h3>Java</h3>
+                    <p>Enterprise applications and Android development</p>
+                    <button class="learn-btn">Learn Java</button>
+                </div>
+                <div class="language-card">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="React">
+                    <h3>React</h3>
+                    <p>Build modern user interfaces</p>
+                    <button class="learn-btn">Learn React</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Have questions about our courses? We're here to help you start your programming journey.</p>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-input">
+                                <option>Select Course Interest</option>
+                                <option>HTML & CSS</option>
+                                <option>JavaScript</option>
+                                <option>Python</option>
+                                <option>Java</option>
+                                <option>React</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" class="form-textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Contact Info</h3>
+                    <div class="contact-item">
+                        <h4>+91 234 567 890</h4>
+                        <p>Call us for course inquiries</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>info@codelearn.com</h4>
+                        <p>Email us your questions</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>123 Tech Street, Delhi</h4>
+                        <p>Visit our learning center</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Section -->
+    <section class="image-section">
+        <div class="container">
+            <div class="image-card">
+                <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop" alt="Programming" class="section-image">
+                <div class="image-overlay">
+                    <h3>Learn by Doing</h3>
+                    <p>Hands-on coding experience with real projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Paths -->
+    <section class="learning-paths">
+        <div class="container">
+            <div class="grid">
+                <div class="path-category">
+                    <h3>Frontend Development</h3>
+                    <ul>
+                        <li>HTML Fundamentals</li>
+                        <li>CSS Styling</li>
+                        <li>JavaScript Basics</li>
+                        <li>React Framework</li>
+                    </ul>
+                </div>
+                <div class="path-category">
+                    <h3>Backend Development</h3>
+                    <ul>
+                        <li>Python Programming</li>
+                        <li>Node.js</li>
+                        <li>Database Design</li>
+                        <li>API Development</li>
+                    </ul>
+                </div>
+                <div class="path-category">
+                    <h3>Mobile Development</h3>
+                    <ul>
+                        <li>Java for Android</li>
+                        <li>React Native</li>
+                        <li>Flutter</li>
+                        <li>iOS Development</li>
+                    </ul>
+                </div>
+                <div class="path-category">
+                    <h3>Data Science</h3>
+                    <ul>
+                        <li>Python for Data</li>
+                        <li>Machine Learning</li>
+                        <li>Data Analysis</li>
+                        <li>AI Fundamentals</li>
+                    </ul>
+                </div>
+                <div class="path-category">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>Full Stack</li>
+                        <li>MERN Stack</li>
+                        <li>Django</li>
+                        <li>Laravel</li>
+                    </ul>
+                </div>
+                <div class="cta-section">
+                    <button class="cta-button-large">Start Learning</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Join Our Learning Community!</h2>
+            <p>Get updates on new courses and programming tips</p>
+            <button class="newsletter-button">Subscribe Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li><a href="#">HTML Course</a></li>
+                        <li><a href="#">CSS Course</a></li>
+                        <li><a href="#">JavaScript Course</a></li>
+                        <li><a href="#">React Course</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Backend</h4>
+                    <ul>
+                        <li><a href="#">Python Course</a></li>
+                        <li><a href="#">Node.js Course</a></li>
+                        <li><a href="#">Java Course</a></li>
+                        <li><a href="#">PHP Course</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Mobile</h4>
+                    <ul>
+                        <li><a href="#">Android Development</a></li>
+                        <li><a href="#">iOS Development</a></li>
+                        <li><a href="#">React Native</a></li>
+                        <li><a href="#">Flutter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Data Science</h4>
+                    <ul>
+                        <li><a href="#">Python for Data</a></li>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">Data Analysis</a></li>
+                        <li><a href="#">AI Course</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Code Examples</a></li>
+                        <li><a href="#">Practice Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-cta">
+                    <button class="footer-cta-button">Start Learning</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

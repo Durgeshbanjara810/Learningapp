@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - CodeLearn Admin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop"
+                    alt="CodeLearn Logo">
+                <h2>CodeLearn</h2>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <div class="nav-item">
+                <a href="dashboard.html" class="nav-link">
+                    <span class="nav-icon">📊</span>
+                    Dashboard
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="users.html" class="nav-link">
+                    <span class="nav-icon">👥</span>
+                    Users
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="courses.html" class="nav-link">
+                    <span class="nav-icon">📚</span>
+                    Courses
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="analytics.html" class="nav-link">
+                    <span class="nav-icon">📈</span>
+                    Analytics
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="content.html" class="nav-link">
+                    <span class="nav-icon">📝</span>
+                    Content
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="payments.html" class="nav-link">
+                    <span class="nav-icon">💳</span>
+                    Payments
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="settings.html" class="nav-link">
+                    <span class="nav-icon">⚙️</span>
+                    Settings
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="reports.html" class="nav-link active">
+                    <span class="nav-icon">📋</span>
+                    Reports
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <button class="menu-toggle">☰</button>
+                <h1 class="page-title">Reports & Analytics</h1>
+            </div>
+            <div class="header-right">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" class="search-input" placeholder="Search reports...">
+                </div>
+                <div class="user-menu">
+                    <div class="user-avatar">A</div>
+                    <span>Admin</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Report Generation -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3 class="card-title">Generate Custom Report</h3>
+                    <p class="card-subtitle">Create detailed reports for specific time periods and metrics</p>
+                </div>
+                <form class="form-grid">
+                    <div class="form-group">
+                        <label class="form-label">Report Type</label>
+                        <select class="form-select" required>
+                            <option value="">Select report type</option>
+                            <option value="user-activity">User Activity Report</option>
+                            <option value="course-performance">Course Performance Report</option>
+                            <option value="revenue-analysis">Revenue Analysis Report</option>
+                            <option value="engagement-metrics">Engagement Metrics Report</option>
+                            <option value="completion-rates">Completion Rates Report</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Date Range</label>
+                        <select class="form-select" required>
+                            <option value="">Select date range</option>
+                            <option value="last-7-days">Last 7 Days</option>
+                            <option value="last-30-days">Last 30 Days</option>
+                            <option value="last-3-months">Last 3 Months</option>
+                            <option value="last-6-months">Last 6 Months</option>
+                            <option value="last-year">Last Year</option>
+                            <option value="custom">Custom Range</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Start Date</label>
+                        <input type="date" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">End Date</label>
+                        <input type="date" class="form-input">
+                    </div>
+                    <div class="form-group" style="grid-column: 1 / -1;">
+                        <div class="flex gap-3">
+                            <button type="submit" class="btn btn-primary">Generate Report</button>
+                            <button type="button" class="btn btn-secondary">Schedule Report</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Quick Reports -->
+            <div class="stats-grid mb-4">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Monthly Summary</span>
+                        <span class="stat-icon">📊</span>
+                    </div>
+                    <div class="stat-value">Feb 2024</div>
+                    <div class="stat-change">
+                        <button class="btn btn-secondary" style="padding: 0.5rem; font-size: 0.75rem;">Download
+                            PDF</button>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">User Growth</span>
+                        <span class="stat-icon">👥</span>
+                    </div>
+                    <div class="stat-value">Q1 2024</div>
+                    <div class="stat-change">
+                        <button class="btn btn-secondary" style="padding: 0.5rem; font-size: 0.75rem;">Download
+                            PDF</button>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Revenue Report</span>
+                        <span class="stat-icon">💰</span>
+                    </div>
+                    <div class="stat-value">YTD 2024</div>
+                    <div class="stat-change">
+                        <button class="btn btn-secondary" style="padding: 0.5rem; font-size: 0.75rem;">Download
+                            PDF</button>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Course Analytics</span>
+                        <span class="stat-icon">📚</span>
+                    </div>
+                    <div class="stat-value">All Time</div>
+                    <div class="stat-change">
+                        <button class="btn btn-secondary" style="padding: 0.5rem; font-size: 0.75rem;">Download
+                            PDF</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Report History -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3 class="card-title">Report History</h3>
+                    <p class="card-subtitle">Previously generated reports</p>
+                </div>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Report Name</th>
+                                <th>Type</th>
+                                <th>Date Range</th>
+                                <th>Generated</th>
+                                <th>Size</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div class="font-weight-500">User Activity Report - February 2024</div>
+                                        <div style="font-size: 0.75rem; color: #64748b;">Comprehensive user engagement
+                                            analysis</div>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-info">User Activity</span></td>
+                                <td>Feb 1 - Feb 29, 2024</td>
+                                <td>Feb 29, 2024</td>
+                                <td>2.3 MB</td>
+                                <td><span class="badge badge-success">Ready</span></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">Download</button>
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">View</button>
+                                        <button class="btn btn-danger" style="padding: 0.5rem;">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div class="font-weight-500">Revenue Analysis - Q1 2024</div>
+                                        <div style="font-size: 0.75rem; color: #64748b;">Quarterly revenue breakdown and
+                                            trends</div>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-success">Revenue</span></td>
+                                <td>Jan 1 - Mar 31, 2024</td>
+                                <td>Feb 28, 2024</td>
+                                <td>1.8 MB</td>
+                                <td><span class="badge badge-success">Ready</span></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">Download</button>
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">View</button>
+                                        <button class="btn btn-danger" style="padding: 0.5rem;">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div class="font-weight-500">Course Performance - January 2024</div>
+                                        <div style="font-size: 0.75rem; color: #64748b;">Course enrollment and
+                                            completion metrics</div>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-warning">Course Performance</span></td>
+                                <td>Jan 1 - Jan 31, 2024</td>
+                                <td>Feb 25, 2024</td>
+                                <td>3.1 MB</td>
+                                <td><span class="badge badge-warning">Processing</span></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;"
+                                            disabled>Download</button>
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;"
+                                            disabled>View</button>
+                                        <button class="btn btn-danger" style="padding: 0.5rem;">Cancel</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div class="font-weight-500">Engagement Metrics - December 2023</div>
+                                        <div style="font-size: 0.75rem; color: #64748b;">User engagement and interaction
+                                            analysis</div>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-info">Engagement</span></td>
+                                <td>Dec 1 - Dec 31, 2023</td>
+                                <td>Feb 20, 2024</td>
+                                <td>1.5 MB</td>
+                                <td><span class="badge badge-success">Ready</span></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">Download</button>
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">View</button>
+                                        <button class="btn btn-danger" style="padding: 0.5rem;">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Key Metrics Summary -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Key Performance Indicators</h3>
+                    <p class="card-subtitle">Important metrics at a glance</p>
+                </div>
+                <div class="form-grid">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">Monthly Active Users</span>
+                            <span class="stat-icon">👥</span>
+                        </div>
+                        <div class="stat-value">8,921</div>
+                        <div class="stat-change positive">
+                            <span>↗</span>
+                            <span>+12% vs last month</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">Course Completion Rate</span>
+                            <span class="stat-icon">✅</span>
+                        </div>
+                        <div class="stat-value">78%</div>
+                        <div class="stat-change positive">
+                            <span>↗</span>
+                            <span>+3% improvement</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">Average Session Duration</span>
+                            <span class="stat-icon">⏱️</span>
+                        </div>
+                        <div class="stat-value">24m 15s</div>
+                        <div class="stat-change positive">
+                            <span>↗</span>
+                            <span>+2m 30s increase</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">Customer Satisfaction</span>
+                            <span class="stat-icon">⭐</span>
+                        </div>
+                        <div class="stat-value">4.7/5</div>
+                        <div class="stat-change positive">
+                            <span>↗</span>
+                            <span>+0.2 improvement</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">Revenue Growth</span>
+                            <span class="stat-icon">📈</span>
+                        </div>
+                        <div class="stat-value">+15%</div>
+                        <div class="stat-change positive">
+                            <span>↗</span>
+                            <span>Month over month</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">Churn Rate</span>
+                            <span class="stat-icon">📉</span>
+                        </div>
+                        <div class="stat-value">2.3%</div>
+                        <div class="stat-change negative">
+                            <span>↘</span>
+                            <span>-0.5% improvement</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

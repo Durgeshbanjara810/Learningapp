@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - CodeLearn Admin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop" alt="CodeLearn Logo">
+                <h2>CodeLearn</h2>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <div class="nav-item">
+                <a href="dashboard.html" class="nav-link">
+                    <span class="nav-icon">📊</span>
+                    Dashboard
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="users.html" class="nav-link">
+                    <span class="nav-icon">👥</span>
+                    Users
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="courses.html" class="nav-link active">
+                    <span class="nav-icon">📚</span>
+                    Courses
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="analytics.html" class="nav-link">
+                    <span class="nav-icon">📈</span>
+                    Analytics
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="content.html" class="nav-link">
+                    <span class="nav-icon">📝</span>
+                    Content
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="payments.html" class="nav-link">
+                    <span class="nav-icon">💳</span>
+                    Payments
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="settings.html" class="nav-link">
+                    <span class="nav-icon">⚙️</span>
+                    Settings
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="reports.html" class="nav-link">
+                    <span class="nav-icon">📋</span>
+                    Reports
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <button class="menu-toggle">☰</button>
+                <h1 class="page-title">Courses Management</h1>
+            </div>
+            <div class="header-right">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" class="search-input" placeholder="Search courses...">
+                </div>
+                <div class="user-menu">
+                    <div class="user-avatar">A</div>
+                    <span>Admin</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Course Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Total Courses</span>
+                        <span class="stat-icon">📚</span>
+                    </div>
+                    <div class="stat-value">45</div>
+                    <div class="stat-change positive">
+                        <span>↗</span>
+                        <span>+3 this month</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Published</span>
+                        <span class="stat-icon">✅</span>
+                    </div>
+                    <div class="stat-value">38</div>
+                    <div class="stat-change positive">
+                        <span>↗</span>
+                        <span>84% published</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Total Enrollments</span>
+                        <span class="stat-icon">👨‍🎓</span>
+                    </div>
+                    <div class="stat-value">15,432</div>
+                    <div class="stat-change positive">
+                        <span>↗</span>
+                        <span>+1,234 this month</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Avg. Rating</span>
+                        <span class="stat-icon">⭐</span>
+                    </div>
+                    <div class="stat-value">4.7</div>
+                    <div class="stat-change positive">
+                        <span>↗</span>
+                        <span>+0.2 improvement</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Course Form -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3 class="card-title">Add New Course</h3>
+                    <p class="card-subtitle">Create a new course for your platform</p>
+                </div>
+                <form class="form-grid">
+                    <div class="form-group">
+                        <label class="form-label">Course Title</label>
+                        <input type="text" class="form-input" placeholder="Enter course title" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Category</label>
+                        <select class="form-select" required>
+                            <option value="">Select category</option>
+                            <option value="frontend">Frontend Development</option>
+                            <option value="backend">Backend Development</option>
+                            <option value="mobile">Mobile Development</option>
+                            <option value="data-science">Data Science</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Price (₹)</label>
+                        <input type="number" class="form-input" placeholder="0" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Duration (hours)</label>
+                        <input type="number" class="form-input" placeholder="0" min="1" required>
+                    </div>
+                    <div class="form-group" style="grid-column: 1 / -1;">
+                        <label class="form-label">Description</label>
+                        <textarea class="form-textarea" placeholder="Enter course description" required></textarea>
+                    </div>
+                    <div class="form-group" style="grid-column: 1 / -1;">
+                        <button type="submit" class="btn btn-primary">Create Course</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Courses Table -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">All Courses</h3>
+                    <p class="card-subtitle">Manage your course catalog</p>
+                </div>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Course</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Enrollments</th>
+                                <th>Rating</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop" alt="Course" style="width: 40px; height: 40px; border-radius: 8px;">
+                                        <div>
+                                            <div class="font-weight-500">JavaScript Fundamentals</div>
+                                            <div style="font-size: 0.75rem; color: #64748b;">25 lessons • 8 hours</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Frontend</td>
+                                <td>₹2,999</td>
+                                <td>1,234</td>
+                                <td>
+                                    <div class="flex items-center gap-1">
+                                        <span>4.8</span>
+                                        <span style="color: #fbbf24;">⭐</span>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-success">Published</span></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">Edit</button>
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">View</button>
+                                        <button class="btn btn-danger" style="padding: 0.5rem;">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop" alt="Course" style="width: 40px; height: 40px; border-radius: 8px;">
+                                        <div>
+                                            <div class="font-weight-500">React Development</div>
+                                            <div style="font-size: 0.75rem; color: #64748b;">35 lessons • 12 hours</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Frontend</td>
+                                <td>₹4,999</td>
+                                <td>892</td>
+                                <td>
+                                    <div class="flex items-center gap-1">
+                                        <span>4.9</span>
+                                        <span style="color: #fbbf24;">⭐</span>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-success">Published</span></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">Edit</button>
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">View</button>
+                                        <button class="btn btn-danger" style="padding: 0.5rem;">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop" alt="Course" style="width: 40px; height: 40px; border-radius: 8px;">
+                                        <div>
+                                            <div class="font-weight-500">Python for Beginners</div>
+                                            <div style="font-size: 0.75rem; color: #64748b;">40 lessons • 15 hours</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Backend</td>
+                                <td>₹3,499</td>
+                                <td>2,156</td>
+                                <td>
+                                    <div class="flex items-center gap-1">
+                                        <span>4.7</span>
+                                        <span style="color: #fbbf24;">⭐</span>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-success">Published</span></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">Edit</button>
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">View</button>
+                                        <button class="btn btn-danger" style="padding: 0.5rem;">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex items-center gap-3">
+                                        <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop" alt="Course" style="width: 40px; height: 40px; border-radius: 8px;">
+                                        <div>
+                                            <div class="font-weight-500">Java Programming</div>
+                                            <div style="font-size: 0.75rem; color: #64748b;">50 lessons • 20 hours</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Backend</td>
+                                <td>₹5,999</td>
+                                <td>567</td>
+                                <td>
+                                    <div class="flex items-center gap-1">
+                                        <span>4.6</span>
+                                        <span style="color: #fbbf24;">⭐</span>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-warning">Draft</span></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">Edit</button>
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">View</button>
+                                        <button class="btn btn-danger" style="padding: 0.5rem;">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

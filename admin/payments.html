@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments - CodeLearn Admin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop" alt="CodeLearn Logo">
+                <h2>CodeLearn</h2>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <div class="nav-item">
+                <a href="dashboard.html" class="nav-link">
+                    <span class="nav-icon">📊</span>
+                    Dashboard
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="users.html" class="nav-link">
+                    <span class="nav-icon">👥</span>
+                    Users
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="courses.html" class="nav-link">
+                    <span class="nav-icon">📚</span>
+                    Courses
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="analytics.html" class="nav-link">
+                    <span class="nav-icon">📈</span>
+                    Analytics
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="content.html" class="nav-link">
+                    <span class="nav-icon">📝</span>
+                    Content
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="payments.html" class="nav-link active">
+                    <span class="nav-icon">💳</span>
+                    Payments
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="settings.html" class="nav-link">
+                    <span class="nav-icon">⚙️</span>
+                    Settings
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="reports.html" class="nav-link">
+                    <span class="nav-icon">📋</span>
+                    Reports
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <button class="menu-toggle">☰</button>
+                <h1 class="page-title">Payment Management</h1>
+            </div>
+            <div class="header-right">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" class="search-input" placeholder="Search transactions...">
+                </div>
+                <div class="user-menu">
+                    <div class="user-avatar">A</div>
+                    <span>Admin</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Payment Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Total Revenue</span>
+                        <span class="stat-icon">💰</span>
+                    </div>
+                    <div class="stat-value">₹2,45,670</div>
+                    <div class="stat-change positive">
+                        <span>↗</span>
+                        <span>+8% from last month</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Successful Payments</span>
+                        <span class="stat-icon">✅</span>
+                    </div>
+                    <div class="stat-value">1,234</div>
+                    <div class="stat-change positive">
+                        <span>↗</span>
+                        <span>98.5% success rate</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Failed Payments</span>
+                        <span class="stat-icon">❌</span>
+                    </div>
+                    <div class="stat-value">18</div>
+                    <div class="stat-change negative">
+                        <span>↘</span>
+                        <span>1.5% failure rate</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Pending Refunds</span>
+                        <span class="stat-icon">⏳</span>
+                    </div>
+                    <div class="stat-value">5</div>
+                    <div class="stat-change">
+                        <span>₹12,450 total</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Revenue Chart -->
+            <div class="chart-container mb-4">
+                <div class="card-header">
+                    <h3 class="card-title">Revenue Trends</h3>
+                    <p class="card-subtitle">Monthly revenue breakdown</p>
+                </div>
+                <div class="chart-placeholder"></div>
+            </div>
+
+            <!-- Recent Transactions -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Recent Transactions</h3>
+                    <p class="card-subtitle">Latest payment activities</p>
+                </div>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Transaction ID</th>
+                                <th>User</th>
+                                <th>Course</th>
+                                <th>Amount</th>
+                                <th>Payment Method</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div class="font-weight-500">#TXN12345</div>
+                                        <div style="font-size: 0.75rem; color: #64748b;">Razorpay</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex items-center gap-3">
+                                        <div class="user-avatar">R</div>
+                                        <span>Rahul Sharma</span>
+                                    </div>
+                                </td>
+                                <td>JavaScript Fundamentals</td>
+                                <td>₹2,999</td>
+                                <td>Credit Card</td>
+                                <td>Feb 15, 2024</td>
+                                <td><span class="badge badge-success">Success</span></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">View</button>
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">Receipt</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div class="font-weight-500">#TXN12346</div>
+                                        <div style="font-size: 0.75rem; color: #64748b;">Razorpay</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex items-center gap-3">
+                                        <div class="user-avatar">P</div>
+                                        <span>Priya Patel</span>
+                                    </div>
+                                </td>
+                                <td>React Development</td>
+                                <td>₹4,999</td>
+                                <td>UPI</td>
+                                <td>Feb 14, 2024</td>
+                                <td><span class="badge badge-success">Success</span></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">View</button>
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">Receipt</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div class="font-weight-500">#TXN12347</div>
+                                        <div style="font-size: 0.75rem; color: #64748b;">Razorpay</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex items-center gap-3">
+                                        <div class="user-avatar">A</div>
+                                        <span>Amit Kumar</span>
+                                    </div>
+                                </td>
+                                <td>Python for Beginners</td>
+                                <td>₹3,499</td>
+                                <td>Net Banking</td>
+                                <td>Feb 13, 2024</td>
+                                <td><span class="badge badge-danger">Failed</span></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">View</button>
+                                        <button class="btn btn-primary" style="padding: 0.5rem;">Retry</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div class="font-weight-500">#TXN12348</div>
+                                        <div style="font-size: 0.75rem; color: #64748b;">Razorpay</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex items-center gap-3">
+                                        <div class="user-avatar">S</div>
+                                        <span>Sneha Singh</span>
+                                    </div>
+                                </td>
+                                <td>HTML & CSS Basics</td>
+                                <td>₹1,999</td>
+                                <td>Credit Card</td>
+                                <td>Feb 12, 2024</td>
+                                <td><span class="badge badge-warning">Refunded</span></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">View</button>
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">Receipt</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div class="font-weight-500">#TXN12349</div>
+                                        <div style="font-size: 0.75rem; color: #64748b;">Razorpay</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="flex items-center gap-3">
+                                        <div class="user-avatar">V</div>
+                                        <span>Vikash Gupta</span>
+                                    </div>
+                                </td>
+                                <td>Java Programming</td>
+                                <td>₹5,999</td>
+                                <td>UPI</td>
+                                <td>Feb 11, 2024</td>
+                                <td><span class="badge badge-warning">Pending</span></td>
+                                <td>
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-secondary" style="padding: 0.5rem;">View</button>
+                                        <button class="btn btn-primary" style="padding: 0.5rem;">Process</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Payment Methods -->
+            <div class="card mt-4">
+                <div class="card-header">
+                    <h3 class="card-title">Payment Method Analytics</h3>
+                    <p class="card-subtitle">Popular payment methods used by customers</p>
+                </div>
+                <div class="form-grid">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">Credit/Debit Cards</span>
+                            <span class="stat-icon">💳</span>
+                        </div>
+                        <div class="stat-value">45%</div>
+                        <div class="stat-change">Most popular method</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">UPI Payments</span>
+                            <span class="stat-icon">📱</span>
+                        </div>
+                        <div class="stat-value">35%</div>
+                        <div class="stat-change">Growing rapidly</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">Net Banking</span>
+                            <span class="stat-icon">🏦</span>
+                        </div>
+                        <div class="stat-value">15%</div>
+                        <div class="stat-change">Traditional method</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">Wallets</span>
+                            <span class="stat-icon">👛</span>
+                        </div>
+                        <div class="stat-value">5%</div>
+                        <div class="stat-change">Digital wallets</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

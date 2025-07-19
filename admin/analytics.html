@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - CodeLearn Admin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop" alt="CodeLearn Logo">
+                <h2>CodeLearn</h2>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <div class="nav-item">
+                <a href="dashboard.html" class="nav-link">
+                    <span class="nav-icon">📊</span>
+                    Dashboard
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="users.html" class="nav-link">
+                    <span class="nav-icon">👥</span>
+                    Users
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="courses.html" class="nav-link">
+                    <span class="nav-icon">📚</span>
+                    Courses
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="analytics.html" class="nav-link active">
+                    <span class="nav-icon">📈</span>
+                    Analytics
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="content.html" class="nav-link">
+                    <span class="nav-icon">📝</span>
+                    Content
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="payments.html" class="nav-link">
+                    <span class="nav-icon">💳</span>
+                    Payments
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="settings.html" class="nav-link">
+                    <span class="nav-icon">⚙️</span>
+                    Settings
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="reports.html" class="nav-link">
+                    <span class="nav-icon">📋</span>
+                    Reports
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <button class="menu-toggle">☰</button>
+                <h1 class="page-title">Analytics Dashboard</h1>
+            </div>
+            <div class="header-right">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" class="search-input" placeholder="Search analytics...">
+                </div>
+                <div class="user-menu">
+                    <div class="user-avatar">A</div>
+                    <span>Admin</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Analytics Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Page Views</span>
+                        <span class="stat-icon">👁️</span>
+                    </div>
+                    <div class="stat-value">45,678</div>
+                    <div class="stat-change positive">
+                        <span>↗</span>
+                        <span>+12% from last month</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Session Duration</span>
+                        <span class="stat-icon">⏱️</span>
+                    </div>
+                    <div class="stat-value">8m 32s</div>
+                    <div class="stat-change positive">
+                        <span>↗</span>
+                        <span>+2m 15s increase</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Bounce Rate</span>
+                        <span class="stat-icon">📉</span>
+                    </div>
+                    <div class="stat-value">24.5%</div>
+                    <div class="stat-change negative">
+                        <span>↘</span>
+                        <span>-3.2% improvement</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Conversion Rate</span>
+                        <span class="stat-icon">🎯</span>
+                    </div>
+                    <div class="stat-value">3.8%</div>
+                    <div class="stat-change positive">
+                        <span>↗</span>
+                        <span>+0.5% increase</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Grid -->
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <div class="card-header">
+                        <h3 class="card-title">Traffic Overview</h3>
+                        <p class="card-subtitle">Website traffic trends over time</p>
+                    </div>
+                    <div class="chart-placeholder"></div>
+                </div>
+                <div class="chart-container">
+                    <div class="card-header">
+                        <h3 class="card-title">User Engagement</h3>
+                        <p class="card-subtitle">User interaction metrics</p>
+                    </div>
+                    <div class="chart-placeholder"></div>
+                </div>
+                <div class="chart-container">
+                    <div class="card-header">
+                        <h3 class="card-title">Course Performance</h3>
+                        <p class="card-subtitle">Most popular courses by enrollment</p>
+                    </div>
+                    <div class="chart-placeholder"></div>
+                </div>
+                <div class="chart-container">
+                    <div class="card-header">
+                        <h3 class="card-title">Revenue Analytics</h3>
+                        <p class="card-subtitle">Monthly revenue breakdown</p>
+                    </div>
+                    <div class="chart-placeholder"></div>
+                </div>
+            </div>
+
+            <!-- Top Performing Content -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Top Performing Content</h3>
+                    <p class="card-subtitle">Most viewed and engaged content</p>
+                </div>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Content</th>
+                                <th>Type</th>
+                                <th>Views</th>
+                                <th>Engagement</th>
+                                <th>Completion Rate</th>
+                                <th>Revenue</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div class="font-weight-500">JavaScript Fundamentals</div>
+                                        <div style="font-size: 0.75rem; color: #64748b;">Course</div>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-info">Course</span></td>
+                                <td>12,543</td>
+                                <td>89%</td>
+                                <td>76%</td>
+                                <td>₹3,67,890</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div class="font-weight-500">React Hooks Tutorial</div>
+                                        <div style="font-size: 0.75rem; color: #64748b;">Tutorial</div>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-success">Tutorial</span></td>
+                                <td>8,921</td>
+                                <td>92%</td>
+                                <td>84%</td>
+                                <td>₹0</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div class="font-weight-500">Python Data Analysis</div>
+                                        <div style="font-size: 0.75rem; color: #64748b;">Course</div>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-info">Course</span></td>
+                                <td>7,654</td>
+                                <td>87%</td>
+                                <td>71%</td>
+                                <td>₹2,89,620</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div class="font-weight-500">CSS Grid Layout</div>
+                                        <div style="font-size: 0.75rem; color: #64748b;">Blog Post</div>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-warning">Blog</span></td>
+                                <td>6,432</td>
+                                <td>78%</td>
+                                <td>95%</td>
+                                <td>₹0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- User Behavior Analytics -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">User Behavior Insights</h3>
+                    <p class="card-subtitle">Understanding how users interact with your platform</p>
+                </div>
+                <div class="form-grid">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">Most Active Time</span>
+                            <span class="stat-icon">🕐</span>
+                        </div>
+                        <div class="stat-value">2-4 PM</div>
+                        <div class="stat-change">Peak learning hours</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">Popular Device</span>
+                            <span class="stat-icon">📱</span>
+                        </div>
+                        <div class="stat-value">Mobile</div>
+                        <div class="stat-change">68% of traffic</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">Avg. Course Progress</span>
+                            <span class="stat-icon">📊</span>
+                        </div>
+                        <div class="stat-value">67%</div>
+                        <div class="stat-change">Per enrolled user</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">Return Rate</span>
+                            <span class="stat-icon">🔄</span>
+                        </div>
+                        <div class="stat-value">45%</div>
+                        <div class="stat-change">Weekly return rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
